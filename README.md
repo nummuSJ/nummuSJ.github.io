@@ -1,1 +1,0 @@
-# nummuSJ.gitjub.io
