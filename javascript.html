@@ -36,30 +36,44 @@
           태그 속성 중 이벤트를 담당하는 onclick,onchange 등등의 속성에 <br>
           작성해서 구현 할 수 있다.
         </p>
-        <h2>
-          태그:tag
-        </h2>
-        <p>
-          HTML은 "태그"를 이용하여 여러가지 기능을 구현 할 수 있다.<br>
-          사실 웹사이트를 만드는건 정말 간단하다. 그냥 메모장을 켜서 적고싶은걸 끄적여주고
-          이름 바꾸기로 .txt 확장자를 .html 로 바꿔주기만 하면 끝난다.<br>
-          한번 해보면 메모장에 적은것이 인터넷상에 뜰것이다.<br>물론 이 상태의 웹사이트는
-          사람들이 웹브라우저로 찾아 볼 수는 없는 껍데기만 웹사이트인것에 불과하지만
-          그래도 내가 공유하고싶은 정보를 사이트에 띄우는것 자체는 그리 어렵지 않다는 것이다.<br>
-          <br>그렇게 메모장에 적은걸 사이트로 띄어보다가 문득 생각날것이다. 글을 좀 길게 쓰니깐 웹사이트상에서
-          글이 끊겨서 가독성이 떨어지는걸 보게 되고,<br>메모장에서 적당히 줄바꿈을 해줘서 다시 사이트를 실행해보자
-          똑같이 끊겨있는 것을 보게 될것이다.<br>이때 필요한것이 바로 "태그"이다.<br>
-          웹사이트가 웹사이트의 역할을 하게끔 충분히 보기 좋고 편하게끔 만들기 위해 필요한것들이다.<br>
-          줄바꿈을 위한 &lt;br&gt; 태그와 단락을 표시하기 위한 &lt;p&gt;같은 것들이다.<br>
-          이거 말고도 수많은 태그들이 있지만, 다 외우지도 못할 뿐더러, 외울 필요도 없다.<br>
-          정말 많이 사용하는 것들만 조금 외워놓고 필요한건 그때그때 구글검색을 통해 찾아 쓰는것이 <br>
-          더 효율적이다.
+        <h2>선택자:querySelector('')</h2>
+        <p>자바스크립트에서 태그를 제어하기 위해서는 선택자로 제어 할 태그를 지정해줘야 한다.<br>
+        선택자로 태그의 속성을 제어할 수 있다.<br>
+        document.querySelector('') 형식으로 제어할 수 있다.<br>
+        예를들어 &lth1&gt태그를 제어하고 싶을때는 document.querySelector('h1')으로 지정<br>
+        이런 경우 모든 &lth1&gt 태그를 제어하게 되는데, 하나의 &lth1&gt만 제어하고 싶을 경우,<br>
+        class 나 id 를 부여해<br>document.querySelector('h1.class')
+        <br>document.querySelector('#지정한아이디')<br>
+        의 방식으로 제어할 수 있다.<br><br>
+        속성을 제어하는 방법은<br>document.querySelector('h1.class')<u>.style.backgroundColor</u> = 'black'; <br>
+        의 방식으로 제어할 수 있다.<br>
+        주의할 점은 CSS 문법에선 background-color 이지만, <br>
+        자바 스크립트에서는 background<u>C</u>olor 처럼 대문자로 -를 대신한다는 것이다.
         </p>
-        <h2>많이 사용하거나, 유용한 태그들</h2>
-        <p><u>리스트를 가로로 배열 하고 싶을때</u> &ltul&gt 에다가 list-style:none; 값을 주고,<br>
-        &ltli&gt 에다 float:left; 값을 주면 된다. 후에 &ltli&gt에 margin을 넣어서 간격을 맞춘다.</p>
-        <p>&ltlink&gt로 &ltstyle&gt 에 중복된 내용들을 한번에 정리 할 수 있다,<br>고로 로딩
-        빨라진다.</p>
+        <div class="buttonEvent" style="border-radius:10%;">
+          <h2 class="buttonEvent">조건문:if/else</h2>
+          <p class="buttonEvent">
+            조건문을 통하여 이벤트를 제어 할 수 있다. <br>
+            <input id="changebutton" type="button" value="야간모드" style="width:100%;height:30px;" onclick="
+            if(document.querySelector('#changebutton').value === '야간모드'){
+              document.querySelector('#changebutton').value = '주간모드';
+              document.querySelector('div.buttonEvent').style.backgroundColor = 'black';
+              document.querySelector('h2.buttonEvent').style.color = 'white';
+              document.querySelector('p.buttonEvent').style.color = 'white';
+            }else{
+              document.querySelector('#changebutton').value = '야간모드';
+              document.querySelector('div.buttonEvent').style.backgroundColor = 'white';
+              document.querySelector('h2.buttonEvent').style.color = 'black';
+              document.querySelector('p.buttonEvent').style.color = 'black';
+            }"
+            />
+            value의 값이 야간모드/주간모드냐에 따라 true/false 값이 반환되어 <br>
+            조건문이 실행되는 모습이다.<br>
+          </p>
+        </div>
+        <p style="text-align:left; width:300px;margin:20px auto 20px auto;">
+          if(조건){<br>  조건이 true일때 실행<br>}<br>  else{<br>  조건이 false일때 실행<br>}
+        </p>
       </div>
     </div>
   </body>

@@ -82,3 +82,8 @@ a {
     width:60%;
   }
 }
+@media(max-width:650px){
+  html {
+    width:633px;
+  }
+}
