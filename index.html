@@ -68,9 +68,14 @@
     <h1>INDEX</h1>
     <div id="grid">
       <ul>
-        <li><a href="html.html">HTML</a></li>
-        <li><a href="css.html">CSS</a></li>
-        <li><a href="javascript.html">JAVASCRIPT</a></li>
+        <script>
+          var subject = ["HTML","CSS","JAVASCRIPT"];
+          var i = 0;
+          while(i<subject.length){
+            document.write('<li><a href="'+subject[i]+'.html">'+subject[i]+'</a></li>');
+            i = i + 1;
+          }
+        </script>
       </ul>
       <div class="main_text">
         <div class="img_center">
@@ -85,6 +90,7 @@
           <li>2021.10.22 css 페이지 추가 색 설정, 이미지 변경 및 추가</li>
           <li>2021.10.24 javascript 학습 및 javascript 페이지 추가</li>
           <li>2021.10.26 javascript(조건문) 학습</li>
+          <li>2021.10.27 javascript(리팩토링 중복제거,반복과 배열) 학습 및 인덱스 페이지 리스트 반복문으로 만듬</li>
         </ol>
       </div>
     </div>
