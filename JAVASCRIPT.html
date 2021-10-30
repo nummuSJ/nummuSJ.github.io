@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>코딩공부-HTML</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="page_javascript.css">
   </head>
   <body style="margin:0;">
@@ -86,6 +87,31 @@
           var target = document.querySelector('body');<br>
           target.style.color = 'black'; <br>
           처럼 변수를 선언하고 편하게 사용할 수 있다.
+          <h2>배열</h2>
+          <p>var a = [1,"2",안녕]; <br>
+          자료형 상관없이 배열에 넣을 수 있다 <br>
+          var a = document.querySelectorAll('p'); 하면 <br>
+          모든 p태그를 순서대로 a에 배열로 저장한다<br>
+          </p>
+          <h2>반복문</h2>
+          <p>while(true이면반복 false이면 멈춤){}</p>
+          <h2>함수</h2>
+          <p>function 함수이름(파라미터){내용~ 리턴~}
+          <br>var 함수이름 = function(){}식으로 선언하는것도 가능
+          <br>함수이름(인자); 로 실행
+          <br>this는 태그 안에서 종속된 태그를 선택하므로, <br>
+          함수를 쓸때는 this를 인자로 넘겨줘야됌</p>
+          <h2>객체</h2>
+          <p>var object = {"key1":"value1"<strong>,</strong>"key2":"value2"} 식으로 선언<br>
+          쓸때는 object.key1 처럼 객체를 꼭 써줘야함 <br>
+          object.newkey = "newvalue"; 와 같은 방법으로 새로운 프로퍼티를 넣어줄수있음. <br>
+          <u>객체에 저장된 변수는 프로퍼티(property),함수는 메소드(method)라 불린다.</u><br>
+          object["new key"]; 띄어쓰기 프로퍼티 선언 document.write(["new key"]); 출력
+          <br>for(var key in object){document.write("object<u>[key]</u>")} <br>
+          로 객체에 포함된 모든 프로퍼티와 메소드를 확인,출력할수있다.</p>
+          <h2>파일쪼개기</h2>
+          <p>&ltscript src="javascript.js"&gt&ltscript&gt <br>
+          파일을 나눈뒤 사용하면 여러모로 좋다</p>
         </p>
       </div>
     </div>
