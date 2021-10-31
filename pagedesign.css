@@ -1,0 +1,45 @@
+* {
+  font-family: 'Noto Serif KR', serif;
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: 'Lobster', cursive;
+  font-weight:bold;
+  font-size: 60px;
+  color:white;
+  position: absolute;
+  width:300px;
+  text-align: center;
+  right:350px;
+}
+header {
+  background-color:#170b41; /*제목 배경색*/
+  position: fixed;
+  height:120px;
+}
+#mainContainer {
+  width:1000px;
+  margin:0px auto;
+
+}
+#subjectgrid{
+  /*display: grid;
+  grid-template-columns: 1fr 1fr 1fr;*/
+  list-style: none;
+}
+li {
+  float : left;
+  position : relative;
+}
+#subjectgrid  a {
+  color:white;
+  text-decoration: none;
+}
+nav {
+  width:1000px;
+  height:30px;
+  position: relative;
+  bottom
+}
