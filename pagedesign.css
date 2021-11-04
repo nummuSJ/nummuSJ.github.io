@@ -19,12 +19,17 @@ header {
 }
 #mainContainer {
   width:1000px;
+  height:2500px;
   position: absolute;
   left:50%;
   margin-left:-500px;
   box-shadow: 1px 0px 8px 3px #d9d4e0, -1px 0px 8px 3px #d9d4e0;
   background-color: #fff;
 }
+main {
+  height:2500px;
+}
+
 #subjectgrid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
