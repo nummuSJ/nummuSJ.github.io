@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko" >
+  <head>
+    <meta charset="utf-8">
+    <title>슬라이드 이미지 연습</title>
+    <style>
+      * {
+        padding:0px;
+        margin:0px;
+        text-decoration:none;
+        text-align:center;
+      }
+      #index {
+        margin: 0px auto;
+        border:1px solid dimgrey;
+        width:1200px;
+        height:600px;
+      }
+      #header {
+        border-bottom:1px solid dimgrey;
+        box-sizing:border-box;
+        height:100px;
+        line-height: 100px;
+        font-size: 1.5rem;
+      }
+      #slide {
+        height:500px;
+        overflow:hidden;
+      }
+      #slide>ul {
+        width:3600px;
+        font-size:0px;
+      }
+      #slide>ul>li {
+        font-size:0px;
+        display:inline-block;
+      }
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="index">
+      <div id="header">좌우 슬라이딩</div>
+      <div id="slide">
+        <ul id="ul1">
+          <li><a href="#"><img src="beach.jpg" alt="slide_1"></a></li>
+          <li><a href="#"><img src="oasis.jpg" alt="slide_2"></a></li>
+          <li><a href="#"><img src="sky.jpg" alt="slide_3"></a></li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      var ed = $('#slide>ul');
+      setInterval(function(){
+        ed.delay(2000);
+        ed.animate({marginLeft:"-1200px"});
+        ed.delay(2000);
+        ed.animate({marginLeft:"-2400px"});
+        ed.delay(2000);
+        ed.animate({marginLeft:"0px"});
+      });
+    </script>
+  </body>
+</html>
