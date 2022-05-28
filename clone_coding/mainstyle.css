@@ -4,8 +4,29 @@
   box-sizing: border-box;
   margin:0px;
 }
+/* 드래그 금지 */
+body {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+/*
+.draggable {
+  -webkit-user-select:text;
+  -moz-user-select:text;      <텍스트만 드래그 허용할때>
+  -ms-user-select:text;       <그냥 허용할때는 text -> all>
+  user-select:text
+}
+*/
 .topbar{
   background-color:#32343e;
   height:56px;
-  padding:8px 0px;
+  padding:13px 0px;
+  text-align: center;
+}
+.topbar input{
+  width:30px;
+  height:30px;
+  background-size: 25px;  /* 2022.05.28 아이콘 크기 조절 어케하노? */
 }
