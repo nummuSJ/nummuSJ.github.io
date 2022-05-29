@@ -3,6 +3,12 @@
 *{
   margin:0px;
 }
+@font-face {
+    font-family: 'HallymMjo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymMjo-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+} /*한림명조체*/
 /* 드래그 금지 */
 body {
   -webkit-user-select:none;
@@ -18,13 +24,15 @@ body {
   user-select:text
 }
 */
-.topbar{
+.screenConvertionBar{
   background-color:#32343e;
   height:42px;
   padding:7px 0px;
   text-align: center;
+  position: fixed;
+  width:100%;
 }
-.topbar input{
+.screenConvertionBar input{
   margin : 0px 7px;
   padding: 9px;
   background-position: center;
@@ -32,4 +40,61 @@ body {
 }
 #monitor{
   background-color:#191a1f;
+}
+/*밑에서부터 타이틀바 시작*/
+.titleBar {
+  position : fixed;
+  top : 56px;
+  width:100%;
+  height:50px;
+  border-bottom: 1px solid #eeeeee;
+  text-align:center;
+}
+.titleBar > .title{
+  font-family: 'HallymMjo-Regular';
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 1px;
+  top:12px;
+}
+.title > a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 550;
+}
+.title > a:hover{
+  color: #777777;
+}
+
+.titleBar > ul{
+  list-style: none;
+  position: relative;
+  left:260px;
+}
+.titleBar > ul > li{
+  float: left;
+  font-weight: lighter;
+  font-size: 0.8em;
+  letter-spacing: -0.1em;
+  padding: 0px 15px;
+  margin-top: -10px;
+  border-right: 1px solid #eeeeee;
+}
+.titleBar a{
+  color:#3a3a3a;
+  text-decoration: none;
+}
+.titleBar> ul a:hover{
+  color:#000;
+}
+#lastList {
+  border-right:none;
+}
+#addfunction{
+  position: relative;
+  right:-430px;
+  top:-13px;
+}
+#addfunction input{
+  padding:0px 5px;
 }
