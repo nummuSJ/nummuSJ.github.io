@@ -11,7 +11,14 @@
         <div class="topbar">
           <!-- 아이콘 크기 24px-->
           <input type="image" src="image/monitor.png" value="screenconvert1" class="screenconvert1"/>
-          <input type="image" src="image/smartphone.png" value="screenconvert2" class="screenconvert2"/>
+          <input type="image" src="image/smartphone.png" value="screenconvert2" class="screenconvert2" onclick="
+          var monitor = document.querySelector('input.screenconvert1');
+          var smartphone = document.querySelector('input.screenconvert2');
+          if(this.style.backgroundColor != '#191a1f'){
+            this.style.backgroundColor = '#191a1f';
+            monitor.style.backgroundColor = 'transparent';
+          }
+          "/>
         </div>
       </header>
       <main>
