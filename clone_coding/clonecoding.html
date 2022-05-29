@@ -3,22 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>NUMMUU</title>
-    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="cssfiles/mainstyle.css">
   </head>
   <body>
     <div class="container">
       <header>
         <div class="topbar">
-          <!-- 아이콘 크기 24px-->
-          <input type="image" src="image/monitor.png" value="screenconvert1" class="screenconvert1"/>
-          <input type="image" src="image/smartphone.png" value="screenconvert2" class="screenconvert2" onclick="
-          var monitor = document.querySelector('input.screenconvert1');
-          var smartphone = document.querySelector('input.screenconvert2');
-          if(this.style.backgroundColor != '#191a1f'){
-            this.style.backgroundColor = '#191a1f';
-            monitor.style.backgroundColor = 'transparent';
-          }
-          "/>
+          <input type="image" src="images/monitor.png" id="monitor" onclick="screenConver('smartphone' , 'monitor');"/>
+          <input type="image" src="images/smartphone.png" id="smartphone" onclick="screenConver('monitor' , 'smartphone');"/>
         </div>
       </header>
       <main>
@@ -26,5 +18,6 @@
       <footer>
       </footer>
     </div>
+    <script type="text/javascript" src="jsfiles/screenconvertion.js"></script>
   </body>
 </html>

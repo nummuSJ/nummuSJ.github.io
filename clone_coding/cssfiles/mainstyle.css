@@ -1,0 +1,35 @@
+/* 상단 바 색깔 #32343e */
+/* 아이콘 무료 사이트 더노운프로젝트 , fraticon */
+*{
+  margin:0px;
+}
+/* 드래그 금지 */
+body {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+/*
+.draggable {
+  -webkit-user-select:text;
+  -moz-user-select:text;      <텍스트만 드래그 허용할때>
+  -ms-user-select:text;       <e다 허용할때는 text -> all>
+  user-select:text
+}
+*/
+.topbar{
+  background-color:#32343e;
+  height:42px;
+  padding:7px 0px;
+  text-align: center;
+}
+.topbar input{
+  margin : 0px 7px;
+  padding: 9px;
+  background-position: center;
+  border-radius:3px;
+}
+#monitor{
+  background-color:#191a1f;
+}
