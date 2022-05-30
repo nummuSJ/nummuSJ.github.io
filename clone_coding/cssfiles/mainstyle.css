@@ -49,6 +49,10 @@ body {
 }
 #monitor{
   background-color:#191a1f;
+  transition: all 0.2s;
+}
+#smartphone{
+  transition: all 0.2s;
 }
 /*밑에서부터 타이틀바 시작*/
 .titleBar {
