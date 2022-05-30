@@ -1,0 +1,30 @@
+#listBar{
+  height:50px;
+  position: fixed; /* 스크롤에 따른 이벤트 작성 시 수정 */
+  top: 107px;
+  line-height: 50px;
+  width:fit-content;
+  left: 50%;
+  transform: translate(-55%, 0); /* tranform은 요소의 정중앙을 기준으로 움직인다. */
+}
+#listBar ul{
+  list-style:none;
+}
+#listBar a{
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+#menuimg{
+  width: 20px;
+  height: 22px;
+}
+#listBar li{
+  float: left;
+  margin:0px 30px;
+}
+#fi{
+  line-height: 65px;
+}
