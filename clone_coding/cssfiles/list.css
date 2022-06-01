@@ -3,12 +3,15 @@
   position: fixed; /* 스크롤에 따른 이벤트 작성 시 수정 */
   top: 107px;
   line-height: 50px;
-  width:fit-content;
-  left: 50%;
-  transform: translate(-55%, 0); /* tranform은 요소의 정중앙을 기준으로 움직인다. */
+  width:100%;
+  opacity: 0.9;
+  background-color: #fff;
 }
 #listBar ul{
   list-style:none;
+  position:relative;
+  left: 80%;
+  transform: translate(-50%);
 }
 #listBar a{
   color: #000;
@@ -44,4 +47,5 @@
   object-fit:contain;
   padding:14px;
   transition: all 0.5s ;
+  left: 30%;
 }
