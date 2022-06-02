@@ -38,6 +38,7 @@
   transition: all 0.3s;
   border-top: 1px solid #eeeeee;
   pointer-events: none;
+  box-shadow:1px 1px 2px #eeeeee, -1px 1px 2px #eeeeee;
 }
 
 #menuimg1{

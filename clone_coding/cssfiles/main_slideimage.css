@@ -8,23 +8,13 @@
 #slideImage img{
   width:100%;
   height:100%;
-  font-size: 0px;
+}
+#slideImage ul{
+  list-style: none;
+  padding-left: 0px;
+}
+#slideImage li{
   position: absolute;
-  top: 0px;
+  font-size: 0px;
 
-}
-#slide1{
-  opacity: 1;
-  pointer-events: all;
-  transition: all 1s;
-}
-#slide2{
-  opacity: 0;
-  pointer-events: none;
-  transition: all 1s;
-}
-#slide3{
-  opacity: 0;
-  pointer-events: none;
-  transition: all 1s;
 }
