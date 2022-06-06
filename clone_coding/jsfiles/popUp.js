@@ -28,8 +28,8 @@ $(document).ready(function(){
   );
 
   setInterval(function(){
-    $('.point_popup').css("top","5px").delay(500);
-    $('.point_popup').css("top","10px").delay(500);
+    $('.point_popup').animate({"top":"3px"},800);
+    $('.point_popup').animate({"top":"11px"},800);
   },0);
 
 });
