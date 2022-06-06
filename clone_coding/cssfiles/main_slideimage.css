@@ -39,8 +39,17 @@
 }
 #progressBarBase .progressWating{
   height:5px;
-  width:90px;
+  width:100px;
   background-color: #bbb;
+  border-radius: 1px;
+  padding:0;
+  margin:0px 10px;
+}
+
+#progressSelect{
+  height:5px;
+  width:100px;
+  background-color: #666;
   border-radius: 1px;
   padding:0;
   margin:0px 10px;
