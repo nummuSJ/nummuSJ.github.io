@@ -63,6 +63,7 @@ body {
   text-align:center;
   background-color: #fff;
   opacity: 0.9;
+  z-index: 2;
 }
 .titleBar > .title{
   font-family: 'HallymMjo-Regular';
@@ -92,7 +93,12 @@ body {
   letter-spacing: -0.1em;
   padding: 0px 15px;
   margin-top: -10px;
+}
+.titleBar > ul > li:first-child{
   border-right: 1px solid #eeeeee;
+}
+.titleBar > ul > li:last-child{
+  border-left: 1px solid #eeeeee;
 }
 .titleBar a{
   color:#3a3a3a;
@@ -101,9 +107,6 @@ body {
 .titleBar> ul a:hover{
   color:#000;
 }
-#lastList {
-  border-right:none;
-}
 #addfunction{
   position: relative;
   left:23%;
@@ -111,4 +114,19 @@ body {
 }
 #addfunction input{
   padding:0px 5px;
+}
+
+.point_popup{
+  background-color: #000;
+  position: relative;
+  top: 10px;
+  width:60px;
+  height:20px;
+  left:50%;
+  transform:translate(-50%);
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  letter-spacing: 0;
+  transition:all 0.5s;
 }

@@ -4,8 +4,8 @@ $(document).ready(function(){
   $('#slideImage>ul>li:first-child').fadeIn(500);
 
   setInterval(function(){
-    $('#progressShow_1').animate({'width':"100px"},5000).delay(500);
-    $('#progressShow_1').animate({"width":"0px"},0);
+    $('#progressShow_1').animate({'width':"100px"},5000).delay(400);
+    $('#progressShow_1').animate({"width":"0px"},0).delay(100);
   }); // 선택자 공부해서 프로그래스 바 분할 조작 해야댐
   setInterval(function(){
     $('#slideImage>ul>li:first-child').fadeOut(500).next().delay(500).fadeIn(500).end().appendTo('#slideImage>ul');
