@@ -3,14 +3,58 @@
   height:500px;;
   margin: 80px auto;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
+/* 여기까지 상품 레이아웃 공통 속성 */
+
 #layout_1{
-  background-color: #efefef;
-  box-shadow: 0px 1px 3px 1px #efefef, 0px -1px 3px 1px #efefef;
+  background-color: #fdfdfd;
+  box-shadow: 0px 2px 3px 2px #fdfdfd, 0px -2px 3px 2px #fdfdfd;
 }
-.item_layout img{
+#layout_1 img{
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   border: 1px solid #eee;
 }
+/*여기까지 1번 상품 레이아웃 */
+
+#layout_2{
+  background-color: powderblue;
+  margin-top: 0px;
+  position: relative;
+}
+#layout_2_text{
+  font-family: '-KITA-Regular';
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 165px;
+}
+#layout_2_slide{
+  position: relative;
+  display: inline-block;
+  top:50%;
+  transform:translateY(-50%);
+  width:1240px;
+  height: 360px;
+  background-color: dimgrey;
+  overflow: hidden;
+}
+#layout_2_slide > ul{
+  position: relative;
+  list-style: none;
+  padding-left: 0px;
+  height: 360px;
+  width: 1860px;
+  left: -310px;
+}
+#layout_2_slide > ul > li{
+  float:left;
+  margin:0px 5px;
+  background-color: #eeeeee;
+  height: 360px;
+  width: 300px;
+}
+/* 여기까지 2번 상품 레이아웃 (자동 슬라이드) */
