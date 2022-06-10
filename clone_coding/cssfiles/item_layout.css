@@ -40,7 +40,7 @@
   width:1240px;
   height: 360px;
   background-color: dimgrey;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 #layout_2_slide > ul{
   position: relative;
@@ -48,13 +48,15 @@
   padding-left: 0px;
   height: 360px;
   width: 1860px;
-  left: -310px;
+  left:-310px;
 }
 #layout_2_slide > ul > li{
-  float:left;
+  position:relative;
+  float:right;
   margin:0px 5px;
   background-color: #eeeeee;
   height: 360px;
   width: 300px;
+  transition: all 2s
 }
 /* 여기까지 2번 상품 레이아웃 (자동 슬라이드) */
